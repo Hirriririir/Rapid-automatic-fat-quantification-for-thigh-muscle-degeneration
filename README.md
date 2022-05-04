@@ -1,14 +1,16 @@
 # Rapid automatic fat quantification for thigh muscle degeneration 
 
-> The toolkit was developed for rapidly auto-calculate fat quantification for thigh muscle degeneration in muscular dystrophy patients. 
+> The toolkit was developed for rapidly auto-calculating fat quantification for thigh muscle degeneration in muscular dystrophy patients. 
 
-This project takes advantage of [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) (a self-adapting framework for U-Net-based medical image segmentation) and [MONAI](https://monai.io/) (a PyTorch-based framework for deep learning in healthcare imaging), and has trained from quantitively MRIs (IDEAL) of 33 muscular dystrophy patients and 17 healthy controls. 
+This project takes advantage of [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) (a self-adapting framework for U-Net-based medical image segmentation) and [MONAI](https://monai.io/) (a PyTorch-based framework for deep learning in healthcare imaging), and has trained from quantitative MRIs (IDEAL) of 33 muscular dystrophy patients and 17 healthy controls. 
 
 ## 1. Download the whole repository to local
 
 ```
 git clone https://github.com/Hirriririir/Rapid-automatic-fat-quantification-for-thigh-muscle-degeneration
 ```
+
+**OR** directly download the whole repository from this [link](https://1drv.ms/u/s!AlEvpu4I75DnkKYZsUkdpzNUuq12Ww?e=D0WoyL).
 
 ## 2. Install required dependencies
 
@@ -25,6 +27,7 @@ pip install monai
 - **Input_data**: Two kinds of IDEAL (3-point Dixon) sequences, namely fat and water, are required. You can rename your file according to a format like [Thigh_001_0000.nii.gz], where '001' represents subject code, and '0000' and '0001' represent 'Fat IDEAL sequence' and 'Water IDEAL sequence' respectively.
 - **Output_segmentation**: The segmentation of the mask will be generated after running a inference process by a pretrained nnU-Net model.
 - **Output_fat_fraction**: A csv. file recording the fat fractions of all thigh muscles in  each subject will be generated after running responding code. 
+- **nnUNet_Results_Folder**: Download pretrained model "[model_final_checkpoint.model](https://1drv.ms/u/s!AlEvpu4I75DnkKZmOZFEznbo7OkPxw?e=DTB2Sp)" to the right place "./nnUNet_Results_Folder/nnUNet/3d_fullres/Task501_ThighMuscles/nnUNetTrainerV2__nnUNetPlansv2/fold_0"
 
 ```
 ├── Input_data
@@ -51,9 +54,6 @@ pip install monai
 │                   │   ├── model_final_checkpoint.model
 │                   │   ├── model_final_checkpoint.model.pkl
 │                   │   ├── postprocessing.json
-│                   │   ├── training_log_2022_5_4_13_23_31.txt
-│                   │   ├── training_log_2022_5_4_13_27_00.txt
-│                   │   └── training_log_2022_5_4_21_48_26.txt
 │                   └── plans.pkl
 ├── nnUNet_preprocessed
 └── nnUNet_raw_data_base
