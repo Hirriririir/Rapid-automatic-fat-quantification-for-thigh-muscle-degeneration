@@ -77,6 +77,8 @@ pip install monai
 
 We recommend using [ITK-SNAP](http://www.itksnap.org/) to visualize the MRI files, and the label descriptions for this project can be found as 'Label descriptions for ITK-SNAP.label' in this repository.
 
+![](https://raw.githubusercontent.com/Cpresident/fopi/main/20220505004543.png)
+
 ### Fat fraction visualization
 
 ![](https://raw.githubusercontent.com/Cpresident/fopi/main/20220504230640.png)
