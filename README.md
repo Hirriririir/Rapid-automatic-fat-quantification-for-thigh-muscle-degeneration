@@ -26,7 +26,7 @@ pip install monai
 
 - **Input_data**: Two kinds of IDEAL (3-point Dixon) sequences, namely fat and water, are required. You can rename your files according to a format like [Thigh_001_0000.nii.gz], where '001' represents subject number, and '0000' and '0001' represent 'Fat IDEAL sequence' and 'Water IDEAL sequence' respectively.
 - **Output_segmentation**: The segmentation of the mask will be generated after running a inference process by a pretrained nnU-Net model.
-- **Output_fat_fraction**: A csv. file recording the fat fractions of all thigh muscles in  each subject will be generated after running responding code. 
+- **Output_fat_fraction**: A csv. file recording the fat fractions of all thigh muscles in  each subject will be generated after running corresponding code. 
 - **nnUNet_Results_Folder**: Download pretrained model "[model_final_checkpoint.model](https://1drv.ms/u/s!AlEvpu4I75DnkKZmOZFEznbo7OkPxw?e=DTB2Sp)" to the right place "./nnUNet_Results_Folder/nnUNet/3d_fullres/Task501_ThighMuscles/nnUNetTrainerV2__nnUNetPlansv2/fold_0"
 
 ```
