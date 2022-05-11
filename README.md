@@ -1,8 +1,8 @@
-# Rapid automatic fat quantification for thigh muscle degeneration 
+# Rapid automatic fat quantification in thigh muscle dystrophy for muscular dystrophies [Huashan Neuromuscular Group]
 
 > The toolkit was developed for rapidly auto-calculating fat quantification for thigh muscle degeneration in muscular dystrophy patients. 
 
-This project takes advantage of [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) (a self-adapting framework for U-Net-based medical image segmentation) and [MONAI](https://monai.io/) (a PyTorch-based framework for deep learning in healthcare imaging), and has trained from quantitative MRIs (IDEAL) of 33 muscular dystrophy patients and 17 healthy controls. 
+This project takes advantage of [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) (a self-adapting framework for U-Net-based medical image segmentation) and [MONAI](https://monai.io/) (a PyTorch-based framework for deep learning in healthcare imaging) to build the model. The training dataset included quantitative MRIs (IDEAL) from 33 muscular dystrophy patients and 17 healthy controls. 
 
 ## 1. Download the whole repository to local
 
@@ -24,7 +24,7 @@ pip install monai
 
 ## 3. Place your MRI file in the right place (Input_data)
 
-- **Input_data**: Two kinds of IDEAL (3-point Dixon) sequences, namely fat and water, are required. You can rename your file according to a format like [Thigh_001_0000.nii.gz], where '001' represents subject code, and '0000' and '0001' represent 'Fat IDEAL sequence' and 'Water IDEAL sequence' respectively.
+- **Input_data**: Two kinds of IDEAL (3-point Dixon) sequences, namely fat and water, are required. You can rename your files according to a format like [Thigh_001_0000.nii.gz], where '001' represents subject number, and '0000' and '0001' represent 'Fat IDEAL sequence' and 'Water IDEAL sequence' respectively.
 - **Output_segmentation**: The segmentation of the mask will be generated after running a inference process by a pretrained nnU-Net model.
 - **Output_fat_fraction**: A csv. file recording the fat fractions of all thigh muscles in  each subject will be generated after running responding code. 
 - **nnUNet_Results_Folder**: Download pretrained model "[model_final_checkpoint.model](https://1drv.ms/u/s!AlEvpu4I75DnkKZmOZFEznbo7OkPxw?e=DTB2Sp)" to the right place "./nnUNet_Results_Folder/nnUNet/3d_fullres/Task501_ThighMuscles/nnUNetTrainerV2__nnUNetPlansv2/fold_0"
@@ -73,9 +73,13 @@ pip install monai
 
 ### Segmentation results
 
+These MRIs are from the Test dataset that the model had not seen during the training process. Our model shows a good segmenting ability compared to a human radiologist. 
+
 ![](https://raw.githubusercontent.com/Cpresident/fopi/main/Model%20demo%20fig-01.png)
 
 We recommend using [ITK-SNAP](http://www.itksnap.org/) to visualize the MRI files, and the label descriptions for this project can be found as 'Label descriptions for ITK-SNAP.label' in this repository.
+
+![](https://raw.githubusercontent.com/Cpresident/fopi/main/20220505004543.png)
 
 ### Fat fraction visualization
 
