@@ -1,6 +1,6 @@
 # Rapid automatic fat quantification in thigh muscle dystrophy for muscular dystrophies [Huashan Neuromuscular Group]
 
-> The toolkit was developed for rapidly auto-calculating fat quantification for thigh muscle degeneration in muscular dystrophy patients. 
+> The toolkit was developed for rapid and automatic fat quantification for thigh muscle degeneration in muscular dystrophy patients. 
 
 This project takes advantage of [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) (a self-adapting framework for U-Net-based medical image segmentation) and [MONAI](https://monai.io/) (a PyTorch-based framework for deep learning in healthcare imaging) to build the model. The training dataset included quantitative MRIs (IDEAL) from 33 muscular dystrophy patients and 17 healthy controls. 
 
