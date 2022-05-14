@@ -1,4 +1,4 @@
-# Deep learning-based analysis of thigh MRI aids in automatically fat quantification for muscular dystrophies [Huashan Neuromuscular Group]
+# Deep learning-based analysis aids in automatic quantification of muscle fatty replacement for muscular dystrophies in thigh MRI [Huashan Neuromuscular Group]
 
 > The toolkit was developed for rapid and automatic fat quantification for thigh muscle degeneration in muscular dystrophy patients. 
 
