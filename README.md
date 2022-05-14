@@ -1,4 +1,4 @@
-# Rapid automatic fat quantification in thigh muscle dystrophy for muscular dystrophies [Huashan Neuromuscular Group]
+# Deep learning-based analysis of thigh MRI aids in automatically fat quantification for muscular dystrophies [Huashan Neuromuscular Group]
 
 > The toolkit was developed for rapid and automatic fat quantification for thigh muscle degeneration in muscular dystrophy patients. 
 
