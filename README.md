@@ -15,7 +15,7 @@ git clone https://github.com/Hirriririir/Rapid-automatic-fat-quantification-for-
 ## 2. Install required dependencies
 
 ```python
-# for nnU-Net pipeline
+# for nnU-Net inference pipeline
 pip install nnunet
 
 # for calculating fat fraction
